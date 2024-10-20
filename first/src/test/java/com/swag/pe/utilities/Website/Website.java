@@ -1,4 +1,4 @@
-package com.swag.cl.utilities.Website;
+package com.swag.pe.utilities.Website;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.Step;

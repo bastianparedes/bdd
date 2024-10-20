@@ -1,8 +1,8 @@
-package com.swag.cl.steps;
+package com.swag.pe.steps;
 
 import net.thucydides.core.annotations.Step;
 
-public class Login extends com.swag.cl.pages.Login {
+public class Login extends com.swag.pe.pages.Login {
 
     @Step("Insert username")
     public void typeUsername(String newUsername) {

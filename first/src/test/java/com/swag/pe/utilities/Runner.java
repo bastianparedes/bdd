@@ -1,4 +1,4 @@
-package com.swag.cl.utilities;
+package com.swag.pe.utilities;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

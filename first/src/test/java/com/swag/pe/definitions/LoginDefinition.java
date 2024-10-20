@@ -1,8 +1,8 @@
-package com.swag.cl.definitions;
+package com.swag.pe.definitions;
 
-import com.swag.cl.steps.Login;
-import com.swag.cl.steps.validations.ValidationStep;
-import com.swag.cl.utilities.Website.Website;
+import com.swag.pe.steps.Login;
+import com.swag.pe.steps.validations.ValidationStep;
+import com.swag.pe.utilities.Website.Website;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

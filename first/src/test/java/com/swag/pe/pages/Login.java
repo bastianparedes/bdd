@@ -1,4 +1,4 @@
-package com.swag.cl.pages;
+package com.swag.pe.pages;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;

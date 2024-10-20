@@ -1,6 +1,6 @@
-package com.swag.cl.steps.validations;
+package com.swag.pe.steps.validations;
 
-import com.swag.cl.pages.Login;
+import com.swag.pe.pages.Login;
 import net.thucydides.core.annotations.Step;
 
 public class ValidationStep extends Login {
