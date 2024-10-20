@@ -1,4 +1,4 @@
-package com.swag.pe.utilities.Website;
+package com.swag.pe.utilities.website;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.Step;
@@ -8,8 +8,8 @@ public class Website {
     @Steps(shared = true)
     PageObject swag;
 
-    @Step("Navegate to url")
-    public void navegateTo(String url) {
+    @Step("Navigate to url")
+    public void navigateTo(String url) {
         this.swag.setDefaultBaseUrl(url);
         swag.open();
     }

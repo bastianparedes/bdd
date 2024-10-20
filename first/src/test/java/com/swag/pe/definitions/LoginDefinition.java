@@ -1,8 +1,8 @@
 package com.swag.pe.definitions;
 
-import com.swag.pe.steps.Login;
+import com.swag.pe.steps.login.LoginStep;
 import com.swag.pe.steps.validations.ValidationStep;
-import com.swag.pe.utilities.Website.Website;
+import com.swag.pe.utilities.website.Website;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,21 +15,21 @@ public class LoginDefinition {
     Website url;
 
     @Steps(shared = true)
-    Login login;
+    LoginStep login;
 
     @Steps(shared = true)
     ValidationStep validationStep;
 
     @Given("The user is in website")
     public void userNavigateTo() {
-        this.url.navegateTo("https://www.saucedemo.com/v1/index.html");
+        this.url.navigateTo("https://www.saucedemo.com/v1/index.html");
     }
 
     @When("user enters wrong user and password")
     public void loginWithValidCredentials() {
         this.login.typeUsername("standard_user");
         this.login.typePassword("wrong password");
-        this.login.clickOnLoginButton();
+        this.login.clickLogin();
     }
 
     @Then("message is displayed")

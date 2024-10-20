@@ -1,9 +1,9 @@
 package com.swag.pe.steps.validations;
 
-import com.swag.pe.pages.Login;
+import com.swag.pe.pages.login.LoginPage;
 import net.thucydides.core.annotations.Step;
 
-public class ValidationStep extends Login {
+public class ValidationStep extends LoginPage {
 
     @Step("In plp")
     public Boolean titleIsVisible() {
