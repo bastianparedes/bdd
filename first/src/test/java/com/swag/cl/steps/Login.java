@@ -1,6 +1,6 @@
 package com.swag.cl.steps;
 
-import net.serenitybdd.annotations.Step;
+import net.thucydides.core.annotations.Step;
 
 public class Login extends com.swag.cl.pages.Login {
 

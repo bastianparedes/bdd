@@ -1,8 +1,8 @@
 package com.swag.cl.utilities.Website;
 
-import net.serenitybdd.annotations.Step;
-import net.serenitybdd.annotations.Steps;
 import net.serenitybdd.core.pages.PageObject;
+import net.thucydides.core.annotations.Step;
+import net.thucydides.core.annotations.Steps;
 
 public class Website {
     @Steps(shared = true)

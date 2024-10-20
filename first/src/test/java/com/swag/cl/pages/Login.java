@@ -14,7 +14,7 @@ public class Login extends PageObject {
     @FindBy(id = "login-button")
     protected WebElementFacade btnLoginElement;
 
-    @FindBy(className = "inventory_list")
+    @FindBy(xpath = "//*[@id=\"login_button_container\"]/div/form/h3")
     protected WebElementFacade labelError;
 
     @FindBy(xpath = "//div[@class='product_label']")
