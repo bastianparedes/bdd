@@ -36,16 +36,4 @@ public class LoginDefinition {
     public void loginSuccess() {
         Assert.assertTrue(this.validationStep.titleIsVisible());
     }
-
-    @When("ingresa credenciales incorrectas")
-    public void loginWithUnvalidCredentials() {
-        this.login.typeUsername("standard_user");
-        this.login.typePassword("secret_sauce");
-        this.login.clickLogin();
-    }
-
-    @Then("la aplicación muestra mensage de error")
-    public void loginNoSuccess() {
-        Assert.assertTrue(this.validationStep.messageIsVisible());
-    }
 }

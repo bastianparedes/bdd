@@ -9,9 +9,4 @@ public class ValidationStep extends ValidationPage {
     public Boolean titleIsVisible() {
         return this.labelProduct.isDisplayed();
     }
-
-    @Step("Es visible message de error")
-    public Boolean messageIsVisible() {
-        return this.labelErrorMessage.isDisplayed();
-    }
 }
