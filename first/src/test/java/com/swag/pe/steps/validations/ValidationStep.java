@@ -1,17 +1,17 @@
 package com.swag.pe.steps.validations;
 
-import com.swag.pe.pages.login.LoginPage;
+import com.swag.pe.pages.validations.ValidationPage;
 import net.thucydides.core.annotations.Step;
 
-public class ValidationStep extends LoginPage {
+public class ValidationStep extends ValidationPage {
 
-    @Step("In plp")
+    @Step("Es visible la plp")
     public Boolean titleIsVisible() {
         return this.labelProduct.isDisplayed();
     }
 
-    @Step("Error message is displayed")
-    public Boolean errorMessageIsDisplayed() {
-        return this.labelError.isDisplayed();
+    @Step("Es visible message de error")
+    public Boolean messageIsVisible() {
+        return this.labelErrorMessage.isDisplayed();
     }
 }
