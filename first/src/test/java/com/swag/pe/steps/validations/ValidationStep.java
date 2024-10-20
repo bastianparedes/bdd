@@ -1,7 +1,7 @@
 package com.swag.pe.steps.validations;
 
 import com.swag.pe.pages.validations.ValidationPage;
-import net.thucydides.core.annotations.Step;
+import net.serenitybdd.annotations.Step;
 
 public class ValidationStep extends ValidationPage {
 
