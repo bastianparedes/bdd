@@ -20,20 +20,32 @@ public class LoginDefinition {
     @Steps(shared = true)
     ValidationStep validationStep;
 
-    @Given("The user is in website")
+    @Given("el usuario navega al sitio web")
     public void userNavigateTo() {
         this.url.navigateTo("https://www.saucedemo.com/v1/index.html");
     }
 
-    @When("user enters wrong user and password")
+    @When("ingresa credenciales correctas")
     public void loginWithValidCredentials() {
         this.login.typeUsername("standard_user");
-        this.login.typePassword("wrong password");
+        this.login.typePassword("secret_sauce");
         this.login.clickLogin();
     }
 
-    @Then("message is displayed")
-    public void loginFails() {
-        Assert.assertTrue(this.validationStep.errorMessageIsDisplayed());
+    @Then("la aplicación muestra la plp")
+    public void loginSuccess() {
+        Assert.assertTrue(this.validationStep.titleIsVisible());
+    }
+
+    @When("ingresa credenciales incorrectas")
+    public void loginWithUnvalidCredentials() {
+        this.login.typeUsername("standard_user");
+        this.login.typePassword("secret_sauce");
+        this.login.clickLogin();
+    }
+
+    @Then("la aplicación muestra mensage de error")
+    public void loginNoSuccess() {
+        Assert.assertTrue(this.validationStep.messageIsVisible());
     }
 }

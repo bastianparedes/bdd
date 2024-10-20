@@ -10,7 +10,7 @@ Feature: CP01 - Validar inicio sesión
       When ingresa credenciales correctas
       Then la aplicación muestra la plp
 
-  @InvalidCredentials
-  Scenario: 2 - validar credenciales incorrectas
-    When ingresa credenciales incorrectas
-    Then la aplicación muestra mensage de error
+    @InvalidCredentials
+    Scenario: 2 - validar credenciales incorrectas
+      When ingresa credenciales incorrectas
+      Then la aplicación muestra mensage de error
