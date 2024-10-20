@@ -1,4 +1,4 @@
-@suite @login
+@Suite @Login
 Feature: CP01 - Validar inicio sesión
 
   Background: Validar inicio sesión
