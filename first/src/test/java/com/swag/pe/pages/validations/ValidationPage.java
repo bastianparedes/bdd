@@ -9,6 +9,6 @@ public class ValidationPage extends PageObject {
     @FindBy(xpath = "//div[@class='product_label']")
     protected WebElementFacade labelProduct;
 
-    @FindBy(xpath = "//h3[@data-test='error' and text()='Username and password do not match any user in this service']")
+    @FindBy(className = "error-button")
     protected WebElementFacade labelErrorMessage;
 }

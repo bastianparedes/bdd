@@ -36,4 +36,16 @@ public class LoginDefinition {
     public void loginSuccess() {
         Assert.assertTrue(this.validationStep.titleIsVisible());
     }
+
+    @When("ingresa credenciales incorrectas")
+    public void loginWithNoValidCredentials() {
+        this.login.typeUsername("standard_user");
+        this.login.typePassword("wrong password");
+        this.login.clickLogin();
+    }
+
+    @Then("la aplicación no muestra la plp")
+    public void loginNoSuccess() {
+        Assert.assertTrue(this.validationStep.errorMessageIsVisible());
+    }
 }
