@@ -1,4 +1,4 @@
-package com.swag.pe.pages.validations;
+package com.swag.pages.validations;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;

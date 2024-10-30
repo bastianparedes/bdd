@@ -1,6 +1,6 @@
-package com.swag.pe.steps.validations;
+package com.swag.steps.validations;
 
-import com.swag.pe.pages.validations.ValidationPage;
+import com.swag.pages.validations.ValidationPage;
 import net.serenitybdd.annotations.Step;
 
 public class ValidationStep extends ValidationPage {

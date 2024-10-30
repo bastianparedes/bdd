@@ -1,6 +1,6 @@
-package com.swag.pe.steps.login;
+package com.swag.steps.login;
 
-import com.swag.pe.pages.login.LoginPage;
+import com.swag.pages.login.LoginPage;
 import net.serenitybdd.annotations.Step;
 
 public class LoginStep extends LoginPage {

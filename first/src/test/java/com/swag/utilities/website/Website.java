@@ -1,4 +1,4 @@
-package com.swag.pe.utilities.website;
+package com.swag.utilities.website;
 
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.annotations.Steps;
